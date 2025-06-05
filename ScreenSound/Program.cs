@@ -1,14 +1,19 @@
 ﻿using ScreenSound.Modelos;
 
+
 Banda ledZeppelin = new Banda("Led Zeppelin");
-ledZeppelin.AdicionarNota(10);
-ledZeppelin.AdicionarNota(8);
-ledZeppelin.AdicionarNota(6);
+ledZeppelin.AdicionarNota(new Avaliacao(10));
+ledZeppelin.AdicionarNota(new Avaliacao(8));
+ledZeppelin.AdicionarNota(new Avaliacao(6));
 Banda linkinPark = new Banda("Linkin Park");
 
 Dictionary<string, Banda> bandasRegistradas = new();
 bandasRegistradas.Add(ledZeppelin.Nome, ledZeppelin);
 bandasRegistradas.Add(linkinPark.Nome, linkinPark);
+
+
+
+
 
 void ExibirLogo()
 {
