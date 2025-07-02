@@ -12,9 +12,9 @@ internal class Banda
 
     public string Nome { get; }
 
-    public double Media 
+    public double Media
     {
-        get 
+        get
         {
             if (notas.Count == 0) return 0;
             else return notas.Average(a => a.Nota);
@@ -23,8 +23,8 @@ internal class Banda
     }
     public List<Album> Albuns => albuns;
 
-    public void AdicionarAlbum(Album album) 
-    { 
+    public void AdicionarAlbum(Album album)
+    {
         albuns.Add(album);
     }
 
