@@ -2,7 +2,7 @@
 
 internal class Avaliacao
 {
-    public Avaliacao(int nota) 
+    public Avaliacao(int nota)
     {
 
         // Validação da nota para garantir que esteja entre 0 e 10, futuramente posso ajustar com try catch 

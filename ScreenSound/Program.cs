@@ -70,7 +70,7 @@ internal class Program
                     menu5.Executar(bandasRegistradas);
                     ExibirOpcoesDoMenu();
                     break;
-                case -1:
+                case 0:
                     Console.WriteLine("Tchau tchau :)");
                     break;
                 default:
@@ -78,5 +78,7 @@ internal class Program
                     break;
             }
         }
+
+        ExibirOpcoesDoMenu();
     }
 }
