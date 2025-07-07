@@ -1,9 +1,13 @@
-﻿using ScreenSound.Menus;
+﻿using GenerativeAI;
+using GenerativeAI.Types;
+using ScreenSound.Menus;
 using ScreenSound.Modelos;
+using System;
+using System.Threading.Tasks;
 
 internal class Program
 {
-    private static void Main(string[] args)
+    private static async Task Main(string[] args)
     {
         //bandas já registradas para testes
         Banda ledZeppelin = new Banda("Led Zeppelin");
@@ -70,6 +74,6 @@ internal class Program
             }
         }
 
-        ExibirOpcoesDoMenu();
+   ExibirOpcoesDoMenu();
     }
 }
