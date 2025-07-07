@@ -3,10 +3,10 @@ namespace ScreenSound.Menus;
 
 internal class MenuAvaliarBanda : Menu // Classe que herda de Menu, assim posso reaproveitar o método ExibirTituloDaOpcao
 {
-    public void Executar(Dictionary<string, Banda> bandasRegistradas)
+    public override void Executar(Dictionary<string, Banda> bandasRegistradas)
     {
 
-        Console.Clear();
+        base.Executar(bandasRegistradas);
         ExibirTituloDaOpcao("Avaliar banda");
         Console.Write("Digite o nome da banda que deseja avaliar: ");
         string nomeDaBanda = Console.ReadLine()!;

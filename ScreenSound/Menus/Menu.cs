@@ -1,4 +1,6 @@
-﻿namespace ScreenSound.Menus;
+﻿using ScreenSound.Modelos;
+
+namespace ScreenSound.Menus;
 
 // Essa classe Menu é uma classe base que pode ser usada por outros menus para exibir títulos formatados
 // Utilizando heranca eu consigo reaproveitar código e manter a responsabilidade única de cada classe
@@ -11,6 +13,11 @@ internal class Menu
         Console.WriteLine(asteriscos);
         Console.WriteLine(titulo);
         Console.WriteLine(asteriscos + "\n");
+    }
+
+    public virtual void Executar(Dictionary<string, Banda> bandasRegistradas)
+    {
+        Console.Clear();
     }
 }
 
