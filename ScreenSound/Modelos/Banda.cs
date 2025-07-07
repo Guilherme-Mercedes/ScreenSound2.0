@@ -12,7 +12,6 @@ internal class Banda : IAvalivael
 
     public string Nome { get; }
 
-
     public double Media
     {
         get
@@ -22,9 +21,6 @@ internal class Banda : IAvalivael
         }
 
     }
-
-    public string? Resumo { get; set; }
-
     public List<Album> Albuns => albuns;
 
     public void AdicionarAlbum(Album album)
